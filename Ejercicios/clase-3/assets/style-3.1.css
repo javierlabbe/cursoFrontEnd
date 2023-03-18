@@ -11,6 +11,9 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0 0 3px 3px #0d7cab;
+    background-color: rgb(16, 16, 16);
+    color: white
 }
 
 
@@ -29,6 +32,10 @@ main img {
     width: 100%
 }
 
+main > section > p, h2, h3 {
+    padding-left: 13rem;
+}
+
 li {
     width: fit-content;
 }
@@ -43,15 +50,17 @@ li:hover {
 }
 
 aside {
-    width: 15%;
+    width: 10%;
     padding-left: 0.5rem;
     float: left;
-    height: 40vh;
+    height: 30vh;
     margin: none;
+    border-right: 1.5px solid black;
 }
 
 aside > h2 {
     margin-top: auto;
+    padding: 0;
 }
 
 footer > section {
@@ -61,6 +70,11 @@ footer > section {
 
 footer h2 {
     margin-bottom: 0;
+    padding: 0;
+}
+
+footer h3 {
+    padding: 0;
 }
 
 footer p {
@@ -68,5 +82,7 @@ footer p {
 }
 
 footer {
-    padding: 1rem
+    padding: 1rem;
+    background-color: rgb(16, 16, 16);
+    color: white
 }
