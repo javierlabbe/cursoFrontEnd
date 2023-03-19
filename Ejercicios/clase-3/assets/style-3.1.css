@@ -54,7 +54,7 @@ aside {
     padding-left: 0.5rem;
     float: left;
     height: 30vh;
-    margin: none;
+    margin: 0;
     border-right: 1.5px solid black;
 }
 
