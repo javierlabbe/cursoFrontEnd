@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />    
+    <title>Layout 04 - CSS Grid</title>
+    <style>
+        header, nav, article, aside, footer {background-color: yellow;}
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 11rem);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        header {
+            grid-column: 1/7;
+        } 
+               
+        nav {
+            grid-column: 5/6;
+            grid-row: 2/7;
+        }
+
+        article {
+            grid-column: 1/5;
+            grid-row: 2/6;
+        }
+
+        aside {
+            grid-column: 6/7;
+            grid-row: 2/7;
+        }
+
+        footer {
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>
